@@ -1,0 +1,183 @@
+body {
+  background: #121212;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #eee;
+}
+
+#app {
+  height: 100vh;
+  background: linear-gradient(-40deg, #bb86fc, #121212);
+  justify-content: center;
+  align-content: center;
+  align-items: start;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.holder {
+  width: 50%;
+}
+
+.holder label {
+  color: #bb86fc;
+}
+
+.entry {
+  text-align: center;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.example {
+  font-size: smaller;
+}
+
+.feel {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline {
+  text-align: center;
+  font-size: 52px;
+  text-shadow: 2px 4px 5px #121212;
+}
+.title {
+  margin: 10px;
+}
+
+.max-length-note {
+  font-size: 16px;
+}
+
+.required {
+  border: 2px solid #cf6679;
+  outline: 2px solid #cf6679;
+  background-color: rgba(207, 102, 121, 0.2);
+  color: white;
+}
+
+.required-span {
+  display: none;
+  color: #cf6679;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+#entryHolder {
+  margin-bottom: 10px;
+}
+
+#date {
+  color: #03dac6;
+}
+
+#temp {
+  color: #03dac6;
+}
+
+#content {
+  color: #03dac6;
+  overflow-wrap: break-word;
+}
+
+#spinner {
+  display: none;
+  margin: 10px;
+  top: 50%;
+}
+/*  Basic Styling To Override Default For Basic HTML Elements */
+label {
+  display: block;
+  font-size: 27px;
+}
+
+input {
+  display: block;
+  height: 60px;
+  width: 100%;
+  color: #121212;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+button {
+  display: inline-block;
+  margin-top: 15px;
+  width: 100%;
+  height: 80px;
+  background: #eee;
+  color: #121212;
+  font-size: 26px;
+  font-family: 'Oswald', sans-serif;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  box-shadow: 2px 4px 5px #121212;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background: #bb86fc;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+textarea {
+  color: #121212;
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  border: 3px solid #eee;
+  border-radius: 4px;
+  resize: none;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+/* Style for Placeholder Text*/
+::placeholder {
+  /* Firefox, Chrome, Opera */
+  color: #b3b3b3;
+  font-family: 'Oswald', sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #b3b3b3;
+  font-family: 'Oswald', sans-serif;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #b3b3b3;
+  font-family: 'Oswald', sans-serif;
+}
+
+/* key frams */
+@keyframes gradient {
+  0% {
+    background-position: 0% 75%;
+  }
+  50% {
+    background-position: 100% 75%;
+  }
+  100% {
+    background-position: 0% 75%;
+  }
+}

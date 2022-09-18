@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather Journal</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <div class="holder headline">Weather Journal App</div>
+      </div>
+      <div class="container">
+        <div class="holder zip">
+          <label for="zip">Enter Zipcode here</label>
+          <input type="text" id="zip" placeholder="Enter zip code here" />
+          <span id="requiredSpan" class="required-span">Required</span>
+          <span class="example">Examples: 85005 - 11222 - 23220 - 63131</span>
+        </div>
+        <div class="holder feel">
+          <label for="feelings">How are you feeling today?</label>
+          <textarea
+            class="myInput"
+            id="feelings"
+            placeholder="Enter your feelings here"
+            rows="3"
+            cols="50"
+            maxlength="200"
+          ></textarea>
+          <span class="max-length-note">Maximum length 200 characters.</span>
+          <button id="generate" type="submit">
+            Generate
+            <i id="spinner" class="fa-solid fa-spinner fa-spin-pulse"></i>
+          </button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="holder entry">
+          <div class="title">Most Recent Entry</div>
+          <div id="entryHolder">
+            <div id="date"></div>
+            <div id="temp"></div>
+            <div id="content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js" type="text/javascript"></script>
+    <script
+      src="https://kit.fontawesome.com/d17c643355.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
