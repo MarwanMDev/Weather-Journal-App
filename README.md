@@ -28,7 +28,7 @@ server.js
 
 ## Instructions
 
-Just run the server by writing `node server.js` in your terminal and `localhost:8000` then start testing by writing the `Zip Code` and your `feeling` about the weather then click `Generate`.
+Just run the server by writing `node server.js` in your terminal and `localhost:8000` in the browser then start testing by writing the `Zip Code` and your `feeling` about the weather then click `Generate`.
 
 ## Dependancies
 
